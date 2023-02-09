@@ -4,35 +4,33 @@ package week1.day2;
 public class IsPrime {
 	
 	public static void main(String[] args) {
-		boolean flagg=false,flag=false;
-		int i=31;
+		boolean flag=false;
+		int n=17,i;
 		
-		if(i%2==0) 
+		for(i=2;i<n;i++)
+		
+		{	
+		
+		if(n%i==0) 
 		{
 			flag=true;
+		
+			break;
 		}
-	if(i%2==1)
-			{
-		if(i%3==0) {
-				flagg=true;
+		}
 		
-			}
-			}
-		
-			
-		if(flagg==true || flag==true)
+		if(flag==true )
 			{
 				
-				System.out.println(i+ "the no is not  prime");}
+				System.out.println(n+ "the no is  not  prime");
+				}
 			else {
-				System.out.println(i+"the no is  prime");
+				System.out.println(n+"the no is prime");
 		}
 		
 	
 			}
 		}
-
-	
 
 
 
