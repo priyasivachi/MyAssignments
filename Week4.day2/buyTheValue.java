@@ -30,6 +30,7 @@ public class buyTheValue {
 		driver.findElement(By.xpath("//input[@id='wk_zipcode']")).sendKeys("600008",Keys.TAB,Keys.ENTER);
 		driver.findElement(By.id("product-add-to-cart")).click();
 		driver.findElement(By.xpath("(//a[text()='View Cart'])[2]")).click();
+		//Not working because of application error
 		driver.findElement(By.id("checkout")).click();
 	
 
