@@ -11,9 +11,10 @@ import org.openqa.selenium.interactions.Actions;
 
 public class SnapDeal {
 	public static void main(String[] args) throws InterruptedException {
-		ChromeOptions option = new ChromeOptions();
-		option.addArguments("--disable-notifications");
-		ChromeDriver driver=new ChromeDriver(option);
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--remote-allow-origins=*");
+		options.addArguments("--disable-notifications");
+		ChromeDriver driver=new ChromeDriver(options);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		
@@ -85,3 +86,7 @@ public class SnapDeal {
 	
 
 }
+
+		
+		
+		
